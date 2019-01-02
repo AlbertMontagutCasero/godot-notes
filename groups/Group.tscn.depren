@@ -1,0 +1,95 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://groups/buttongroup1.tres" type="ButtonGroup" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://groups/GroupButton1_1.gd" type="Script" id=3]
+[ext_resource path="res://groups/buttongroup2.tres" type="ButtonGroup" id=4]
+[ext_resource path="res://groups/GroupButton2_1.gd" type="Script" id=5]
+
+
+[node name="GroupButton1_1" type="TextureButton" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 229.0
+margin_top = 362.0
+margin_right = 807.0
+margin_bottom = 576.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = ExtResource( 1 )
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 3 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="GroupButton1_2" type="TextureButton" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -162.0
+margin_top = -301.0
+margin_right = 13.0
+margin_bottom = -52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = ExtResource( 1 )
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+_sections_unfolded = [ "Textures" ]
+
+[node name="GroupButton2_1" type="TextureButton" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 451.0
+margin_top = -293.0
+margin_right = 626.0
+margin_bottom = -44.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = ExtResource( 4 )
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 5 )
+_sections_unfolded = [ "Textures" ]
+
+[connection signal="pressed" from="." to="." method="_on_GroupButton_pressed"]
+
+[connection signal="pressed" from="GroupButton1_2" to="." method="_on_GroupButton_pressed"]
+
+[connection signal="pressed" from="GroupButton2_1" to="." method="_on_GroupButton2_1_pressed" flags=3]
+
+
