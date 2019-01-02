@@ -5,7 +5,7 @@
 [ext_resource path="res://groups/GroupButton1_1.gd" type="Script" id=3]
 [ext_resource path="res://groups/buttongroup2.tres" type="ButtonGroup" id=4]
 
-[node name="GroupButton1_1" type="TextureButton" index="0"]
+[node name="GroupButton1_1" type="TextureButton"]
 
 anchor_left = 0.0
 anchor_top = 0.0
