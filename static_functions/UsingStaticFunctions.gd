@@ -16,7 +16,7 @@ func _ready():
 	var normal_class_2 = load("res://static_functions/NormalClass.gd")
 	normal_class.some_method()
 
-	# now it works without errors.
+	# Now it works without errors.
 	var normal_class_instanced = normal_class.new() # instanciate a object form class
 	normal_class_instanced.some_method()
 
