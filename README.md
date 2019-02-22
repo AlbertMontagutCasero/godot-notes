@@ -14,6 +14,14 @@ In Godot you can check the global scope, vars in the following path.
 
 ![global scope](https://i.ibb.co/ZGYXppj/image.png)
 
+---
+
+### Como funciona el sistema de grados
+
+Godot parte de que el grado 0 es el vector 1, 0, es decir x positivas van hacia la derecha.
+Cuando algo rota va en direccion a y positiva, es decir, hacia abajo (en sentido de las aguajas del reloj). Entonces el vector 0, 1 equivale a 90 grados. 
+Hay que tener en cuenta que godot utiliza radianes para calcular los angulos etc. y estos pueden ser perfectamente negativos. Asi que si vamos sentido contrario a las agujas del reloj no seria por ejemplo el vector 0, -1 270 grados como nuestra cabeza nos dice, sino que serian -90 grados. Para ello siempre se le puede sumar 360 y hacerle un modulo de este para que queden los grados como nos diria el sentido comun.
+
 ----
 
 ### PhysicsBody
